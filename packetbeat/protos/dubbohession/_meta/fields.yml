@@ -1,0 +1,134 @@
+- key: dubbohession
+  title: "dubbohession"
+  description: dubbohession specific event fields.
+  fields:
+    - name: dubbohession
+      type: group
+      description: dubbohession request and response.
+      fields:
+        - name: request
+          type: group
+          description: dubbohession request.
+          fields:
+            - name: headers
+              type: group
+              description: Cassandra request headers.
+              fields:
+                - name: version
+                  type: long
+                  description: The version of the protocol.
+                - name: flags
+                  type: keyword
+                  description: Flags applying to this frame.
+                - name: stream
+                  type: keyword
+                  description:  A frame has a stream id.  If a client sends a request message with the stream id X, it is guaranteed that the stream id of the response to that message will be X.
+                - name: op
+                  type: keyword
+                  description: An operation type that distinguishes the actual message.
+                - name: length
+                  type: long
+                  description: A integer representing the length of the body of the frame (a frame is limited to 256MB in length).
+            - name: query
+              type: keyword
+              description: The CQL query which client send to cassandra.
+
+        - name: response
+          type: group
+          description: Cassandra response.
+          fields:
+            - name: headers
+              type: group
+              description: Cassandra response headers, the structure is as same as request's header.
+              fields:
+                - name: version
+                  type: long
+                  description: The version of the protocol.
+                - name: flags
+                  type: keyword
+                  description: Flags applying to this frame.
+                - name: stream
+                  type: keyword
+                  description:  A frame has a stream id.  If a client sends a request message with the stream id X, it is guaranteed that the stream id of the response to that message will be X.
+                - name: op
+                  type: keyword
+                  description: An operation type that distinguishes the actual message.
+                - name: length
+                  type: long
+                  description: A integer representing the length of the body of the frame (a frame is limited to 256MB in length).
+
+
+            - name: result
+              type: group
+              description: Details about the returned result.
+              fields:
+                - name: type
+                  type: keyword
+                  description: Cassandra result type.
+                - name: rows
+                  type: group
+                  description: Details about the rows.
+                  fields:
+                    - name: num_rows
+                      type: long
+                      description: Representing the number of rows present in this result.
+                    - name: meta
+                      type: group
+                      description: Composed of result metadata.
+                      fields:
+                        - name: keyspace
+                          type: keyword
+                          description: Only present after set Global_tables_spec, the keyspace name.
+                        - name: table
+                          type: keyword
+                          description: Only present after set Global_tables_spec, the table name.
+                        - name: flags
+                          type: keyword
+                          description: Provides information on the formatting of the remaining information.
+                        - name: col_count
+                          type: long
+                          description: Representing the number of columns selected by the query that produced this result.
+                        - name: pkey_columns
+                          type: long
+                          description: Representing the PK columns index and counts.
+                        - name: paging_state
+                          type: keyword
+                          description: The paging_state is a bytes value that should be used in QUERY/EXECUTE to continue paging and retrieve the remainder of the result for this query.
+              fields:
+                - name: type
+                  type: keyword
+                  description: Representing the event type.
+                - name: change
+                  type: keyword
+                  description: The message corresponding respectively to the type of change followed by the address of the new/removed node.
+                - name: host
+                  type: keyword
+                  description: Representing the node ip.
+                - name: port
+                  type: long
+                  description: Representing the node port.
+                - name: schema_change
+                  type: group
+                  description: The events details related to schema change.
+                  fields:
+                    - name: change
+                      type: keyword
+                      description:  Representing the type of changed involved.
+                    - name: keyspace
+                      type: keyword
+                      description: This describes which keyspace has changed.
+                    - name: table
+                      type: keyword
+                      description: This describes which table has changed.
+                    - name: object
+                      type: keyword
+                      description: This describes the name of said affected object (either the table, user type, function, or aggregate name).
+                    - name: target
+                      type: keyword
+                      description: Target could be "FUNCTION" or "AGGREGATE", multiple arguments.
+                    - name: name
+                      type: keyword
+                      description: The function/aggregate name.
+                    - name: args
+                      type: keyword
+                      description: One string for each argument type (as CQL type).

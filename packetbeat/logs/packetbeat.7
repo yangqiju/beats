@@ -1,0 +1,959 @@
+2018-12-16T23:56:34.994+0800	INFO	instance/beat.go:597	Home path: [/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat] Config path: [/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat] Data path: [/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/data] Logs path: [/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/logs]
+2018-12-16T23:56:34.996+0800	DEBUG	[beat]	instance/beat.go:634	Beat metadata path: /Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/data/meta.json
+2018-12-16T23:56:34.997+0800	INFO	instance/beat.go:604	Beat UUID: dde8ab8b-650d-4cc2-9011-c72d1a90c1a4
+2018-12-16T23:56:34.997+0800	DEBUG	[seccomp]	seccomp/seccomp.go:88	Syscall filtering is only supported on Linux
+2018-12-16T23:56:34.997+0800	INFO	[beat]	instance/beat.go:906	Beat info	{"system_info": {"beat": {"path": {"config": "/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat", "data": "/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/data", "home": "/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat", "logs": "/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/logs"}, "type": "packetbeat", "uuid": "dde8ab8b-650d-4cc2-9011-c72d1a90c1a4"}}}
+2018-12-16T23:56:34.997+0800	INFO	[beat]	instance/beat.go:915	Build info	{"system_info": {"build": {"commit": "unknown", "libbeat": "7.0.0", "time": "1754-08-30T22:43:41.128Z", "version": "7.0.0"}}}
+2018-12-16T23:56:34.997+0800	INFO	[beat]	instance/beat.go:918	Go runtime info	{"system_info": {"go": {"os":"darwin","arch":"amd64","max_procs":4,"version":"go1.11.4"}}}
+2018-12-16T23:56:34.998+0800	INFO	[beat]	instance/beat.go:922	Host info	{"system_info": {"host": {"architecture":"x86_64","boot_time":"2018-12-14T10:12:58.413313+08:00","name":"yangqijudeMacBook-Pro-4.local","ip":["127.0.0.1/8","::1/128","fe80::1/64","fe80::465:d5b6:92bd:4111/64","192.168.0.5/24","fe80::7014:79ff:febe:2349/64","fe80::6492:ab3e:7126:c295/64","fe80::7d2:d4d:bdb6:7f53/64"],"kernel_version":"18.2.0","mac":["4a:00:06:b5:9c:20","4a:00:06:b5:9c:21","98:01:a7:ae:dc:49","4a:00:06:b5:9c:20","0a:01:a7:ae:dc:49","72:14:79:be:23:49"],"os":{"family":"darwin","platform":"darwin","name":"Mac OS X","version":"10.14.2","major":10,"minor":14,"patch":2,"build":"18C54"},"timezone":"CST","timezone_offset_sec":28800}}}
+2018-12-16T23:56:34.998+0800	INFO	[beat]	instance/beat.go:951	Process info	{"system_info": {"process": {"cwd": "/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat", "exe": "./packetbeat", "name": "packetbeat", "pid": 54164, "ppid": 53548, "start_time": "2018-12-16T23:56:34.871+0800"}}}
+2018-12-16T23:56:34.998+0800	INFO	instance/beat.go:281	Setup Beat: packetbeat; Version: 7.0.0
+2018-12-16T23:56:34.998+0800	DEBUG	[beat]	instance/beat.go:302	Initializing output plugins
+2018-12-16T23:56:34.999+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:34.999+0800	DEBUG	[publish]	pipeline/consumer.go:137	start pipeline event consumer
+2018-12-16T23:56:34.999+0800	INFO	[publisher]	pipeline/module.go:114	Beat name: yangqijudeMacBook-Pro-4.local
+2018-12-16T23:56:34.999+0800	INFO	procs/procs.go:105	Process watcher disabled
+2018-12-16T23:56:34.999+0800	DEBUG	[main]	beater/packetbeat.go:136	Initializing protocol plugins
+2018-12-16T23:56:34.999+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: amqp
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: cassandra
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: dhcpv4
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: dns
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: http
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: pgsql
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: redis
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: tls
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: mongodb
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: mysql
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: nfs
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: memcache
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: thrift
+2018-12-16T23:56:35.000+0800	DEBUG	[protos]	protos/protos.go:122	registered protocol plugin: dubbohession
+2018-12-16T23:56:35.000+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.000+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[memcache]	memcache/memcache.go:151	init memcache plugin
+2018-12-16T23:56:35.001+0800	DEBUG	[memcache]	memcache/memcache.go:180	transaction timeout: 10s
+2018-12-16T23:56:35.001+0800	DEBUG	[memcache]	memcache/memcache.go:181	udp transaction timeout: 10s
+2018-12-16T23:56:35.001+0800	DEBUG	[memcache]	memcache/memcache.go:182	maxValues = 0
+2018-12-16T23:56:35.001+0800	DEBUG	[memcache]	memcache/memcache.go:183	maxBytesPerValue = 2147483647
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.001+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[mongodb]	mongodb/mongodb.go:84	Init a MongoDB protocol parser
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.002+0800	DEBUG	[sniffer]	sniffer/sniffer.go:91	BPF filter: 'tcp port 5672 or tcp port 9042 or udp port 67 or udp port 68 or port 53 or tcp port 80 or tcp port 8080 or tcp port 8000 or tcp port 5000 or tcp port 8002 or port 11211 or tcp port 27017 or tcp port 3306 or tcp port 2049 or tcp port 5432 or tcp port 6379 or tcp port 9090 or tcp port 443 or tcp port 20000 or tcp port 32771 or icmp or icmp6'
+2018-12-16T23:56:35.009+0800	INFO	sniffer/device.go:92	Resolved device index 7 to device: lo0
+2018-12-16T23:56:35.009+0800	DEBUG	[sniffer]	sniffer/sniffer.go:129	Sniffer type: pcap device: lo0
+2018-12-16T23:56:35.010+0800	INFO	[monitoring]	log/log.go:117	Starting metrics logging every 30s
+2018-12-16T23:56:35.010+0800	INFO	instance/beat.go:403	packetbeat start running.
+2018-12-16T23:56:35.010+0800	DEBUG	[main]	beater/packetbeat.go:231	Waiting for the sniffer to finish
+2018-12-16T23:56:35.012+0800	DEBUG	[processors]	processors/processor.go:66	Processors: 
+2018-12-16T23:56:35.012+0800	DEBUG	[icmp]	icmp/icmp.go:100	Local IP addresses: [127.0.0.1 ::1 fe80::1 fe80::465:d5b6:92bd:4111 192.168.0.5 fe80::7014:79ff:febe:2349 fe80::6492:ab3e:7126:c295 fe80::7d2:d4d:bdb6:7f53]
+2018-12-16T23:56:35.012+0800	DEBUG	[tcp]	tcp/tcp.go:340	tcp%!(EXTRA string=Port map: %v, map[uint16]protos.Protocol=map[8002:http 6379:redis 27017:mongodb 32771:dubbohession 53:dns 80:http 8080:http 9090:thrift 5000:http 443:tls 5432:pgsql 9042:cassandra 8000:http 11211:memcache 20000:dubbohession 5672:amqp 2049:nfs 3306:mysql])
+2018-12-16T23:56:35.012+0800	DEBUG	[udp]	udp/udp.go:111	Port map: map[67:dhcpv4 68:dhcpv4 53:dns 11211:memcache]
+2018-12-16T23:56:35.012+0800	DEBUG	[decoder]	decoder/decoder.go:115	Layer type: Null
+2018-12-16T23:56:35.513+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:36.014+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:36.514+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:37.016+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 1
+2018-12-16T23:56:37.016+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:37.016+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:37.016+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:37.016+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:56:37.016+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:37.016+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590118206 pkt.last_seq=2590118411 stream.last_seq=0 (len=205)
+2018-12-16T23:56:37.017+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc0009758f0 (dir=1, len=205)
+2018-12-16T23:56:37.017+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc0009758f0 (dir=1, len=205)
+2018-12-16T23:56:37.017+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:37.017+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 2
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:37.017+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 3
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:37.017+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:37.017+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:37.017+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366022 pkt.last_seq=2304366146 stream.last_seq=0 (len=124)
+2018-12-16T23:56:37.017+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc0009759e0 (dir=0, len=124)
+2018-12-16T23:56:37.017+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc0009759e0 (dir=0, len=124)
+2018-12-16T23:56:37.018+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:56:37.018+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:37.018+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 4
+2018-12-16T23:56:37.018+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:37.018+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:37.018+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:37.018+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:37.018+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:56:37.018+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:56:37.018+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:56:37.018+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:56:36.671Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "method": "",
+  "type": "dubbohession",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:56:37.518+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:38.020+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:38.020+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [0: 0, 1]
+2018-12-16T23:56:38.020+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=1, end-seq=1
+
+2018-12-16T23:56:38.020+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:56:38.020+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:56:38.521+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:39.022+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:39.524+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:40.024+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:40.525+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:41.026+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:41.528+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:42.028+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:42.529+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:43.031+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:43.531+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:44.032+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:44.533+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:45.035+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:45.536+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:46.037+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:46.538+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:47.039+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 5
+2018-12-16T23:56:47.039+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:47.039+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:47.039+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:47.039+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:56:47.039+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:47.039+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590118411 pkt.last_seq=2590118616 stream.last_seq=0 (len=205)
+2018-12-16T23:56:47.039+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000cbe3c0 (dir=1, len=205)
+2018-12-16T23:56:47.039+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000cbe3c0 (dir=1, len=205)
+2018-12-16T23:56:47.039+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:47.040+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 6
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:47.040+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 7
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:47.040+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:47.040+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366146 pkt.last_seq=2304366270 stream.last_seq=0 (len=124)
+2018-12-16T23:56:47.040+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000cbe4b0 (dir=0, len=124)
+2018-12-16T23:56:47.040+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000cbe4b0 (dir=0, len=124)
+2018-12-16T23:56:47.040+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:56:47.040+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:47.040+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 8
+2018-12-16T23:56:47.040+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:56:47.040+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:56:47.040+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:47.040+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:47.040+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:56:46.677Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:56:47.542+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:48.043+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:48.043+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [1: 0, 1]
+2018-12-16T23:56:48.043+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=2, end-seq=2
+
+2018-12-16T23:56:48.043+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:56:48.043+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:56:48.544+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:49.047+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:49.549+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:50.050+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:50.552+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:51.052+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:51.553+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:52.054+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:52.555+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:53.056+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:53.558+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:54.058+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:54.560+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:55.060+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:55.562+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:56.063+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:56.564+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:57.066+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 9
+2018-12-16T23:56:57.066+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:57.066+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:57.066+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:57.066+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:56:57.066+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:57.066+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590118616 pkt.last_seq=2590118821 stream.last_seq=0 (len=205)
+2018-12-16T23:56:57.066+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000975c80 (dir=1, len=205)
+2018-12-16T23:56:57.066+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000975c80 (dir=1, len=205)
+2018-12-16T23:56:57.066+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:57.066+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 10
+2018-12-16T23:56:57.066+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:57.067+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 11
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:57.067+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:56:57.067+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366270 pkt.last_seq=2304366394 stream.last_seq=0 (len=124)
+2018-12-16T23:56:57.067+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000975d70 (dir=0, len=124)
+2018-12-16T23:56:57.067+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000975d70 (dir=0, len=124)
+2018-12-16T23:56:57.067+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:56:57.067+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:56:57.067+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 12
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:56:57.067+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:56:57.067+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:56:57.067+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:56:57.067+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:56:57.068+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:56:56.684Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:56:57.568+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:58.069+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:58.070+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [2: 0, 1]
+2018-12-16T23:56:58.070+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=3, end-seq=3
+
+2018-12-16T23:56:58.070+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:56:58.070+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:56:58.571+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:59.072+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:56:59.573+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:00.078+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:00.578+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:01.078+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:01.579+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:02.080+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:02.581+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:03.083+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:03.584+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:04.085+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:04.586+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:05.017+0800	INFO	[monitoring]	log/log.go:144	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":73,"time":{"ms":73}},"total":{"ticks":273,"time":{"ms":273},"value":0},"user":{"ticks":200,"time":{"ms":200}}},"info":{"ephemeral_id":"150462ba-d27f-4c03-84fd-939b9b0ec018","uptime":{"ms":30032}},"memstats":{"gc_next":36623584,"memory_alloc":20011296,"memory_total":24261736,"rss":45539328}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":3,"batches":3,"total":3},"type":"console","write":{"bytes":1071}},"pipeline":{"clients":15,"events":{"active":0,"published":3,"total":3},"queue":{"acked":3}}},"system":{"cpu":{"cores":4},"load":{"1":1.9336,"15":3.2686,"5":2.8975,"norm":{"1":0.4834,"15":0.8171,"5":0.7244}}}}}}
+2018-12-16T23:57:05.087+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:05.587+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:06.088+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:06.589+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:07.089+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 13
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:07.090+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:07.090+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:07.090+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590118821 pkt.last_seq=2590119026 stream.last_seq=0 (len=205)
+2018-12-16T23:57:07.090+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000e13380 (dir=1, len=205)
+2018-12-16T23:57:07.090+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000e13380 (dir=1, len=205)
+2018-12-16T23:57:07.090+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:07.090+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 14
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:07.090+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 15
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:07.090+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:07.090+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:07.090+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366394 pkt.last_seq=2304366518 stream.last_seq=0 (len=124)
+2018-12-16T23:57:07.090+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000e13470 (dir=0, len=124)
+2018-12-16T23:57:07.091+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000e13470 (dir=0, len=124)
+2018-12-16T23:57:07.091+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:07.091+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:07.091+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 16
+2018-12-16T23:57:07.091+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:07.091+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:07.091+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:07.091+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:07.091+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:07.091+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:06.688Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "version": "7.0.0",
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:57:07.091+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:07.091+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:07.592+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:08.093+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:08.093+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [3: 0, 1]
+2018-12-16T23:57:08.093+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=4, end-seq=4
+
+2018-12-16T23:57:08.093+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:08.093+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:08.594+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:09.095+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:09.596+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:10.097+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:10.598+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:11.099+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:11.600+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:12.100+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:12.600+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:13.101+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:13.602+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:14.103+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:14.604+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:15.105+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:15.606+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:16.107+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:16.608+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:17.109+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 17
+2018-12-16T23:57:17.109+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:17.109+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:17.109+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:17.109+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:17.109+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:17.109+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590119026 pkt.last_seq=2590119231 stream.last_seq=0 (len=205)
+2018-12-16T23:57:17.109+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000c73410 (dir=1, len=205)
+2018-12-16T23:57:17.109+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000c73410 (dir=1, len=205)
+2018-12-16T23:57:17.110+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:17.110+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 18
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:17.110+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 19
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:17.110+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:17.110+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366518 pkt.last_seq=2304366642 stream.last_seq=0 (len=124)
+2018-12-16T23:57:17.110+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000c73500 (dir=0, len=124)
+2018-12-16T23:57:17.110+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000c73500 (dir=0, len=124)
+2018-12-16T23:57:17.110+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:17.110+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:17.110+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:17.110+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:17.110+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 20
+2018-12-16T23:57:17.110+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:17.111+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:17.110+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:17.111+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:17.111+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:17.111+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:16.694Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:57:17.612+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:18.113+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:18.115+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [4: 0, 1]
+2018-12-16T23:57:18.116+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=5, end-seq=5
+
+2018-12-16T23:57:18.116+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:18.116+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:18.617+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:19.118+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:19.620+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:20.121+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:20.622+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:21.122+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:21.623+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:22.124+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:22.625+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:23.125+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:23.626+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:24.127+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:24.628+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:25.129+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:25.629+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:26.130+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:26.631+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:27.134+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 21
+2018-12-16T23:57:27.134+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:27.134+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:27.134+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:27.134+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:27.134+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:27.134+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590119231 pkt.last_seq=2590119436 stream.last_seq=0 (len=205)
+2018-12-16T23:57:27.134+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f760c0 (dir=1, len=205)
+2018-12-16T23:57:27.134+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f760c0 (dir=1, len=205)
+2018-12-16T23:57:27.134+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:27.134+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 22
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:27.135+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 23
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:27.135+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:27.135+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366642 pkt.last_seq=2304366766 stream.last_seq=0 (len=124)
+2018-12-16T23:57:27.135+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f761b0 (dir=0, len=124)
+2018-12-16T23:57:27.135+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f761b0 (dir=0, len=124)
+2018-12-16T23:57:27.135+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:27.135+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:27.135+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 24
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:27.135+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:27.135+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:27.135+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:27.135+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:27.136+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:26.701Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0",
+    "type": "packetbeat"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:57:27.636+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:28.140+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:28.142+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [5: 0, 1]
+2018-12-16T23:57:28.142+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=6, end-seq=6
+
+2018-12-16T23:57:28.142+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:28.142+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:28.641+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:29.143+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:29.644+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:30.145+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:30.646+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:31.147+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:31.648+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:32.149+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:32.650+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:33.151+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:33.652+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:34.152+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:34.652+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:35.015+0800	INFO	[monitoring]	log/log.go:144	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":108,"time":{"ms":35}},"total":{"ticks":338,"time":{"ms":65},"value":338},"user":{"ticks":230,"time":{"ms":30}}},"info":{"ephemeral_id":"150462ba-d27f-4c03-84fd-939b9b0ec018","uptime":{"ms":60029}},"memstats":{"gc_next":36623584,"memory_alloc":20938872,"memory_total":25189312,"rss":73728}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":3,"batches":3,"total":3},"write":{"bytes":1071}},"pipeline":{"clients":15,"events":{"active":0,"published":3,"total":3},"queue":{"acked":3}}},"system":{"load":{"1":2.752,"15":3.292,"5":3.0024,"norm":{"1":0.688,"15":0.823,"5":0.7506}}}}}}
+2018-12-16T23:57:35.154+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:35.654+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:36.155+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:36.656+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:37.157+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 25
+2018-12-16T23:57:37.157+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:37.157+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:37.157+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:37.157+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:37.157+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:37.157+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590119436 pkt.last_seq=2590119641 stream.last_seq=0 (len=205)
+2018-12-16T23:57:37.158+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000cbf9e0 (dir=1, len=205)
+2018-12-16T23:57:37.158+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000cbf9e0 (dir=1, len=205)
+2018-12-16T23:57:37.158+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:37.158+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 26
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:37.158+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 27
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:37.158+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:37.158+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366766 pkt.last_seq=2304366890 stream.last_seq=0 (len=124)
+2018-12-16T23:57:37.158+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000cbfad0 (dir=0, len=124)
+2018-12-16T23:57:37.158+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000cbfad0 (dir=0, len=124)
+2018-12-16T23:57:37.158+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:37.158+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:37.158+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:37.158+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:37.158+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 28
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:37.158+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:37.158+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:37.159+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:37.159+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:37.159+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:36.706Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  },
+  "method": "",
+  "type": "dubbohession"
+}
+2018-12-16T23:57:37.659+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:38.160+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:38.160+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [6: 0, 1]
+2018-12-16T23:57:38.160+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=7, end-seq=7
+
+2018-12-16T23:57:38.160+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:38.160+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:38.661+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:39.162+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:39.663+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:40.163+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:40.664+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:41.166+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:41.666+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:42.167+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:42.667+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:43.169+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:43.670+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:44.170+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:44.671+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:45.172+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:45.673+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:46.174+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:46.674+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:47.174+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 29
+2018-12-16T23:57:47.174+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:47.174+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:47.174+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:47.174+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:47.174+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:47.174+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590119641 pkt.last_seq=2590119846 stream.last_seq=0 (len=205)
+2018-12-16T23:57:47.174+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000c73830 (dir=1, len=205)
+2018-12-16T23:57:47.174+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000c73830 (dir=1, len=205)
+2018-12-16T23:57:47.174+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:47.174+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 30
+2018-12-16T23:57:47.174+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:47.174+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:47.175+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:47.175+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:47.175+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 31
+2018-12-16T23:57:47.175+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:47.175+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:47.175+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:47.175+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:47.175+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304366890 pkt.last_seq=2304367014 stream.last_seq=0 (len=124)
+2018-12-16T23:57:47.175+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000c73920 (dir=0, len=124)
+2018-12-16T23:57:47.175+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000c73920 (dir=0, len=124)
+2018-12-16T23:57:47.175+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:47.175+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:47.176+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 32
+2018-12-16T23:57:47.176+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:47.176+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:47.176+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:47.176+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:47.176+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:47.176+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:47.176+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:47.177+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:46.713Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:57:47.676+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:48.177+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:48.180+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [7: 0, 1]
+2018-12-16T23:57:48.181+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=8, end-seq=8
+
+2018-12-16T23:57:48.181+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:48.181+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:48.677+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:49.185+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:49.686+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:50.187+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:50.688+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:51.189+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:51.690+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:52.191+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:52.693+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:53.193+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:53.694+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:54.195+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:54.696+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:55.198+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:55.698+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:56.199+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:56.699+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:57.199+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 33
+2018-12-16T23:57:57.199+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:57.199+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:57.199+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:57.200+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:57:57.200+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:57.200+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590119846 pkt.last_seq=2590120051 stream.last_seq=0 (len=205)
+2018-12-16T23:57:57.200+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000e13c20 (dir=1, len=205)
+2018-12-16T23:57:57.200+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000e13c20 (dir=1, len=205)
+2018-12-16T23:57:57.200+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:57.200+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 34
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:57.200+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 35
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:57.200+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:57.200+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:57:57.200+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304367014 pkt.last_seq=2304367138 stream.last_seq=0 (len=124)
+2018-12-16T23:57:57.200+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000e13d10 (dir=0, len=124)
+2018-12-16T23:57:57.200+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000e13d10 (dir=0, len=124)
+2018-12-16T23:57:57.200+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:57:57.200+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:57:57.201+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:57:57.201+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:57:57.201+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 36
+2018-12-16T23:57:57.201+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:57:57.201+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:57:57.201+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:57:57.201+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:57:57.201+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:57:56.717Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:57:57.201+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:57:57.702+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:58.203+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:58.203+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [8: 0, 1]
+2018-12-16T23:57:58.203+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=9, end-seq=9
+
+2018-12-16T23:57:58.203+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:57:58.204+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:57:58.704+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:59.205+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:57:59.705+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:00.206+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:00.707+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:01.207+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:01.709+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:02.210+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:02.710+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:03.211+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:03.712+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:04.213+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:04.714+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:05.015+0800	INFO	[monitoring]	log/log.go:144	Non-zero metrics in the last 30s	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":145,"time":{"ms":37}},"total":{"ticks":408,"time":{"ms":70},"value":408},"user":{"ticks":263,"time":{"ms":33}}},"info":{"ephemeral_id":"150462ba-d27f-4c03-84fd-939b9b0ec018","uptime":{"ms":90029}},"memstats":{"gc_next":36623584,"memory_alloc":22108688,"memory_total":26359128,"rss":65536}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":3,"batches":3,"total":3},"write":{"bytes":1071}},"pipeline":{"clients":15,"events":{"active":0,"published":3,"total":3},"queue":{"acked":3}}},"system":{"load":{"1":3.6699,"15":3.3574,"5":3.207,"norm":{"1":0.9175,"15":0.8394,"5":0.8018}}}}}}
+2018-12-16T23:58:05.214+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:05.715+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:06.216+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:06.717+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:07.218+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 37
+2018-12-16T23:58:07.218+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:07.218+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:07.218+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:07.218+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:58:07.218+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:07.218+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590120051 pkt.last_seq=2590120256 stream.last_seq=0 (len=205)
+2018-12-16T23:58:07.219+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc0010ab320 (dir=1, len=205)
+2018-12-16T23:58:07.219+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc0010ab320 (dir=1, len=205)
+2018-12-16T23:58:07.219+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:07.219+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 38
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:07.219+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 39
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:07.219+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:07.219+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304367138 pkt.last_seq=2304367262 stream.last_seq=0 (len=124)
+2018-12-16T23:58:07.219+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc0010ab410 (dir=0, len=124)
+2018-12-16T23:58:07.219+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc0010ab410 (dir=0, len=124)
+2018-12-16T23:58:07.219+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:58:07.219+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:07.219+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 40
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:07.219+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:58:07.219+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:58:07.220+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:58:07.219+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:07.220+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:07.220+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:58:06.723Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:58:07.720+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:08.220+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:08.221+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [9: 0, 1]
+2018-12-16T23:58:08.221+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=10, end-seq=10
+
+2018-12-16T23:58:08.221+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:58:08.221+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:58:08.722+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:09.223+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:09.724+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:10.225+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:10.726+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:11.228+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:11.729+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:12.229+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:12.731+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:13.231+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:13.733+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:14.234+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:14.734+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:15.236+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:15.737+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:16.238+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:16.739+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 41
+2018-12-16T23:58:16.739+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:16.739+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:16.739+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:16.740+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:16.740+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590120256 pkt.last_seq=2590120461 stream.last_seq=2590120256 (len=205)
+2018-12-16T23:58:16.740+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f767e0 (dir=1, len=205)
+2018-12-16T23:58:16.740+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f767e0 (dir=1, len=205)
+2018-12-16T23:58:16.740+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:16.740+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 42
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:16.740+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 43
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:16.740+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:16.740+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:16.740+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304367262 pkt.last_seq=2304367386 stream.last_seq=2304367262 (len=124)
+2018-12-16T23:58:16.740+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f768d0 (dir=0, len=124)
+2018-12-16T23:58:16.741+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f768d0 (dir=0, len=124)
+2018-12-16T23:58:16.741+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:58:16.741+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:58:16.741+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:58:16.741+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:16.741+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:58:16.741+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:58:16.728Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  }
+}
+2018-12-16T23:58:16.741+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 44
+2018-12-16T23:58:16.742+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:16.742+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:16.743+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:16.743+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:17.244+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:17.745+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:17.745+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [10: 0, 1]
+2018-12-16T23:58:17.746+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=11, end-seq=11
+
+2018-12-16T23:58:17.746+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:58:17.746+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:58:18.246+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:18.750+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:19.251+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:19.751+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:20.252+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:20.754+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:21.255+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:21.755+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:22.256+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:22.757+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:23.259+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:23.760+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:24.261+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:24.761+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:25.262+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:25.763+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:26.265+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:26.766+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 45
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:26.766+0800	DEBUG	[tcp]	tcp/tcp.go:265	Connection src[192.168.0.5:59200] dst[192.168.0.5:20000] doesn't exist, creating new
+2018-12-16T23:58:26.766+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:26.766+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2590120461 pkt.last_seq=2590120666 stream.last_seq=0 (len=205)
+2018-12-16T23:58:26.766+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f76ab0 (dir=1, len=205)
+2018-12-16T23:58:26.766+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f76ab0 (dir=1, len=205)
+2018-12-16T23:58:26.766+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*decoder).readBytes\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:360\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).dubbohessionMessageParser\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession_parse.go:57\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:265\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:26.766+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 46
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:26.766+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:26.766+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 47
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:26.767+0800	DEBUG	[tcp]	tcp/tcp.go:177	tcp flow id: 0x0
+2018-12-16T23:58:26.767+0800	DEBUG	[tcp]	tcp/tcp.go:190	pkt.start_seq=2304367386 pkt.last_seq=2304367510 stream.last_seq=0 (len=124)
+2018-12-16T23:58:26.767+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:244	new stream: 0xc000f76ba0 (dir=0, len=124)
+2018-12-16T23:58:26.767+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:257	stream add data: 0xc000f76ba0 (dir=0, len=124)
+2018-12-16T23:58:26.767+0800	DEBUG	[dubbohession]	dubbohession/dubbohession.go:279	message complete
+2018-12-16T23:58:26.767+0800	ERROR	runtime/panic.go:54	Parse dubbohession exception. Recovering, but please report this.	{"panic": "runtime error: slice bounds out of range", "stack": "github.com/elastic/beats/libbeat/logp.Recover\n\t/Users/yangqiju/go/src/github.com/elastic/beats/libbeat/logp/global.go:105\nruntime.call32\n\t/usr/local/go/src/runtime/asm_amd64.s:522\nruntime.gopanic\n\t/usr/local/go/src/runtime/panic.go:513\nruntime.panicslice\n\t/usr/local/go/src/runtime/panic.go:54\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*stream).PrepareForNewMessage\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:179\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).doParse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:289\ngithub.com/elastic/beats/packetbeat/protos/dubbohession.(*dubboHessionPlugin).Parse\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/dubbohession/dubbohession.go:196\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCPStream).addPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:144\ngithub.com/elastic/beats/packetbeat/protos/tcp.(*TCP).Process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/protos/tcp/tcp.go:239\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).onTCP\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:334\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).process\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:275\ngithub.com/elastic/beats/packetbeat/decoder.(*Decoder).OnPacket\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/decoder/decoder.go:181\ngithub.com/elastic/beats/packetbeat/sniffer.(*Sniffer).Run\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/sniffer/sniffer.go:210\ngithub.com/elastic/beats/packetbeat/beater.(*packetbeat).Run.func2\n\t/Users/yangqiju/go/src/github.com/elastic/beats/packetbeat/beater/packetbeat.go:225"}
+2018-12-16T23:58:26.767+0800	DEBUG	[sniffer]	sniffer/sniffer.go:209	Packet number: 48
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:160	decode packet data
+2018-12-16T23:58:26.767+0800	DEBUG	[publish]	publish/publish.go:171	normalize address for: {"method":"","type":"dubbohession"}
+2018-12-16T23:58:26.767+0800	DEBUG	[publish]	publish/publish.go:176	has src: false
+2018-12-16T23:58:26.767+0800	DEBUG	[publish]	publish/publish.go:197	has dst: false
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:233	IPv4 packet
+2018-12-16T23:58:26.767+0800	DEBUG	[publish]	pipeline/processor.go:308	Publish event: {
+  "@timestamp": "2018-12-16T15:58:26.731Z",
+  "@metadata": {
+    "beat": "packetbeat",
+    "type": "_doc",
+    "version": "7.0.0"
+  },
+  "type": "dubbohession",
+  "method": "",
+  "agent": {
+    "type": "packetbeat",
+    "hostname": "yangqijudeMacBook-Pro-4.local",
+    "version": "7.0.0"
+  },
+  "host": {
+    "name": "yangqijudeMacBook-Pro-4.local"
+  }
+}
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:274	TCP packet
+2018-12-16T23:58:26.767+0800	DEBUG	[decoder]	decoder/decoder.go:330	Ignore empty non-FIN packet
+2018-12-16T23:58:27.269+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:27.770+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:27.770+0800	DEBUG	[publisher]	memqueue/ackloop.go:160	ackloop: receive ack [11: 0, 1]
+2018-12-16T23:58:27.770+0800	DEBUG	[publisher]	memqueue/eventloop.go:535	broker ACK events: count=1, start-seq=12, end-seq=12
+
+2018-12-16T23:58:27.770+0800	DEBUG	[publisher]	memqueue/ackloop.go:128	ackloop: return ack to broker loop:1
+2018-12-16T23:58:27.770+0800	DEBUG	[publisher]	memqueue/ackloop.go:131	ackloop:  done send ack
+2018-12-16T23:58:28.271+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:28.772+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:29.273+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:29.774+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:30.273+0800	DEBUG	[service]	service/service.go:50	Received sigterm/sigint, stopping
+2018-12-16T23:58:30.273+0800	INFO	beater/packetbeat.go:244	Packetbeat send stop signal
+2018-12-16T23:58:30.275+0800	DEBUG	[sniffer]	sniffer/sniffer.go:185	Interrupted
+2018-12-16T23:58:30.276+0800	INFO	[monitoring]	log/log.go:152	Total non-zero metrics	{"monitoring": {"metrics": {"beat":{"cpu":{"system":{"ticks":188,"time":{"ms":188}},"total":{"ticks":485,"time":{"ms":485},"value":485},"user":{"ticks":297,"time":{"ms":297}}},"info":{"ephemeral_id":"150462ba-d27f-4c03-84fd-939b9b0ec018","uptime":{"ms":115289}},"memstats":{"gc_next":36623584,"memory_alloc":23276328,"memory_total":27526768,"rss":45768704}},"libbeat":{"config":{"module":{"running":0}},"output":{"events":{"acked":12,"batches":12,"total":12},"type":"console","write":{"bytes":4284}},"pipeline":{"clients":15,"events":{"active":0,"published":12,"total":12},"queue":{"acked":12}}},"system":{"cpu":{"cores":4},"load":{"1":3.1133,"15":3.3223,"5":3.1226,"norm":{"1":0.7783,"15":0.8306,"5":0.7806}}}}}}
+2018-12-16T23:58:30.276+0800	INFO	[monitoring]	log/log.go:153	Uptime: 1m55.29005858s
+2018-12-16T23:58:30.276+0800	INFO	[monitoring]	log/log.go:130	Stopping metrics logging.
+2018-12-16T23:58:30.276+0800	INFO	instance/beat.go:413	packetbeat stopped.
